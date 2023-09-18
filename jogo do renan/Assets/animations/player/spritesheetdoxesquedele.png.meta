@@ -1,0 +1,1664 @@
+fileFormatVersion: 2
+guid: ca5144034ca52e94d9bcb931f558033a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e634fd8456344f40bf8365976ad68dd
+      internalID: 714252798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 333
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bf6df6a33c89e4b99c12f2223b460b
+      internalID: -354353299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 355
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cda4c161a1609e4891a68e49ad066d4
+      internalID: -1379015747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 355
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fae2138101b3e441b6e750704a45afe
+      internalID: 1001045591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 355
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d179a21982a226e43a34c8e3636a9e62
+      internalID: 1846168208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b599b66019ce1409bd00e74aeeb445
+      internalID: -412330341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 282
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1f02fd168c36742a4d2f4e2b1e1a56
+      internalID: 884123687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 302
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fc93c54dff21f48b55372ba851fd2f
+      internalID: 1077185326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 304
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bbfd9155aa8d147b30056c21ceabbd
+      internalID: 2120982641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 302
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d9011c7fc349e45ab040396fdd7f0f
+      internalID: 784111164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 231
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca9955906decd0408677f8d5df481af
+      internalID: 277879243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 231
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169203a83eac85543939d0bc3bddcc3d
+      internalID: -1671934894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 231
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43e4744ed6d5fb45b4972ad07ce1593
+      internalID: 1363533843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 231
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097b8757818c6214887d165b2284a5a4
+      internalID: -76046462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 257
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99b36cd6021add4c9cae1190a1e4f29
+      internalID: 1963715782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_15
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 257
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5663814baa24f4a40a2b61219ba2df63
+      internalID: -1113234214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_16
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 206
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2200b6e6118f142418679bb6e31e1e14
+      internalID: -1692310040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 218
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5641f1224b2fb9a4aac998c3ff4f5943
+      internalID: -1261384320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_18
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 218
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ce155341108204588d8d7e0c2ec5a7
+      internalID: -25245577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 218
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1943a15267578e246954704e7c5b685b
+      internalID: -132059102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 205
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9829614ee439fef4a972ef034cb21576
+      internalID: 547987941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_21
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 208
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f761634f10f3a3479b3d39eca1fede6
+      internalID: 384213576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_22
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 206
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90747e236e7b6d6479a070932f219111
+      internalID: 1966006162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_23
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 206
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0ab8c4877118640869a5fb53c8e724
+      internalID: 26985299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_24
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 206
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cc3a38d931b9a40a6b33074b3b7cfd
+      internalID: -1894617567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 206
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d697036ae083c5a458e28abd15fed8c6
+      internalID: 1806930071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 206
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7e91964eb1a8044865647bc3c9012e
+      internalID: -1922919141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_27
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 206
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f66c885060c004194a231fbcc813ee
+      internalID: 188482561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_28
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 206
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5904d98925ffa4884792ad13b68bf7
+      internalID: 60888352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_29
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 206
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fef7cf89e3d4864dbb31edac161df82
+      internalID: 610085572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_30
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 204
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd91cda7ad532ac449c8495b78f1ef6e
+      internalID: 1170783216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_31
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 206
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb296703bf84cb549a7f4785ed534b94
+      internalID: -244003117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 206
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a643edaf9fdb2247817af835cb78827
+      internalID: 1332799225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_33
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 206
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0aca9afa503ac409bcb2c16baec56e
+      internalID: -853325993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_34
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 154
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c682186d1850bb34f94dcc7d1071af3f
+      internalID: -1182396913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 154
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72eca784e97f264eb2bfadf57144786
+      internalID: 1277499851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 154
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3cb6aeeab16a843b963a9fca5c922b
+      internalID: 922007666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_37
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 154
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76f2dde35fcb954dab5203b9c1922a1
+      internalID: 1719992660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_38
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 154
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2167e8e119c788408f0da1c32c1ac2b
+      internalID: 881690977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_39
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 154
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d52cdd53db59da4bbdb1d32b57b1e84
+      internalID: -1342488904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_40
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 172
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1f79db086d1bc48b0d28a6e5e31c7a
+      internalID: -618850246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_41
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 172
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6f8daf85ef9114abde1c9ef35a6f40
+      internalID: -581019355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_42
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 172
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c4d3386550b8048b16cba366d3edbd
+      internalID: -1314371792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86462f3ba99057f41bef6693dc13f08c
+      internalID: 1748778258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 123
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29f880107e0109489797c86eafe92d5
+      internalID: -856339081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_45
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 123
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3e1ca0fab44a14580726d40eea7182
+      internalID: 928294569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0483e58be34d9f41a1c12b0ecd77a69
+      internalID: -1297227914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_47
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 52
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4199adf28cdf5249899341aaf13a057
+      internalID: -1349095047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 52
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc25eeaed9e316b47bbcf70607551609
+      internalID: 1148866569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_49
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 52
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb041aed32aef034f95321e445e6d4a8
+      internalID: -1610322536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_50
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 77
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29ca9b0ea97d11408fbd6304b6f502b
+      internalID: -2022933108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_51
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 77
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98768358c87a8274c9dd279940d6a83d
+      internalID: -290757407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_52
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 67
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7232c2580de364a9dcb0fa9c51d0bc
+      internalID: -1777561068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_53
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 80
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb6ef3dd773b2e45a580033ab4c958a
+      internalID: 1057459551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_54
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 67
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c64e8e87bd456499c0cbb9d2939638
+      internalID: -507928770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_55
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 80
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d88e8f255f51547b873047c781ca54
+      internalID: 1711098528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_56
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 65
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b907b86cc750df4428b78ce0747ac310
+      internalID: 1848380102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_57
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 54
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6961d3cc8248c704094715c37e951355
+      internalID: -503802831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_58
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 65
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c529931651dc64d8172c40166fd9ec
+      internalID: -577000800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_59
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 54
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b39f5d320056b4a806f6f4635c76fc
+      internalID: -349594429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_60
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 59
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b505407cb17901240bdf8b67faa62c25
+      internalID: 220419867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_61
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 59
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cae24487c01884ba9b3834fd7d660b
+      internalID: 1256872096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_62
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb12384304f8de4a8d5fccade9662bc
+      internalID: -531757077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_63
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 41
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a54c6e966522d499774703c1288653
+      internalID: 652793901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_64
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 41
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a644d3b333bb0ed4fa5d20cb1208acae
+      internalID: 1961208491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534ed09839b6acb4288e9cc498c70c99
+      internalID: 115377617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_66
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 21
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da393abdbfe3d5b46b11904150b5cb7f
+      internalID: -452332407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_67
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 21
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5760f08e8e9b12343a7b5ce1f4956625
+      internalID: -645433887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetdoxesquedele_68
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cba600815c8bf458f364a7dde24c70
+      internalID: -749706520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spritesheetdoxesquedele_31: -244003117
+      spritesheetdoxesquedele_6: 884123687
+      spritesheetdoxesquedele_0: 714252798
+      spritesheetdoxesquedele_9: 784111164
+      spritesheetdoxesquedele_16: -1692310040
+      spritesheetdoxesquedele_53: 1057459551
+      spritesheetdoxesquedele_43: 1748778258
+      spritesheetdoxesquedele_37: 1719992660
+      spritesheetdoxesquedele_61: 1256872096
+      spritesheetdoxesquedele_3: 1001045591
+      spritesheetdoxesquedele_10: 277879243
+      spritesheetdoxesquedele_21: 384213576
+      spritesheetdoxesquedele_66: -452332407
+      spritesheetdoxesquedele_19: -132059102
+      spritesheetdoxesquedele_64: 1961208491
+      spritesheetdoxesquedele_40: -618850246
+      spritesheetdoxesquedele_45: 928294569
+      spritesheetdoxesquedele_20: 547987941
+      spritesheetdoxesquedele_34: -1182396913
+      spritesheetdoxesquedele_1: -354353299
+      spritesheetdoxesquedele_56: 1848380102
+      spritesheetdoxesquedele_59: -349594429
+      spritesheetdoxesquedele_35: 1277499851
+      spritesheetdoxesquedele_13: -76046462
+      spritesheetdoxesquedele_44: -856339081
+      spritesheetdoxesquedele_15: -1113234214
+      spritesheetdoxesquedele_24: -1894617567
+      spritesheetdoxesquedele_60: 220419867
+      spritesheetdoxesquedele_25: 1806930071
+      spritesheetdoxesquedele_23: 26985299
+      spritesheetdoxesquedele_27: 188482561
+      spritesheetdoxesquedele_55: 1711098528
+      spritesheetdoxesquedele_33: -853325993
+      spritesheetdoxesquedele_68: -749706520
+      spritesheetdoxesquedele_12: 1363533843
+      spritesheetdoxesquedele_50: -2022933108
+      spritesheetdoxesquedele_39: -1342488904
+      spritesheetdoxesquedele_51: -290757407
+      spritesheetdoxesquedele_52: -1777561068
+      spritesheetdoxesquedele_57: -503802831
+      spritesheetdoxesquedele_14: 1963715782
+      spritesheetdoxesquedele_58: -577000800
+      spritesheetdoxesquedele_11: -1671934894
+      spritesheetdoxesquedele_28: 60888352
+      spritesheetdoxesquedele_30: 1170783216
+      spritesheetdoxesquedele_18: -25245577
+      spritesheetdoxesquedele_49: -1610322536
+      spritesheetdoxesquedele_42: -1314371792
+      spritesheetdoxesquedele_5: -412330341
+      spritesheetdoxesquedele_36: 922007666
+      spritesheetdoxesquedele_38: 881690977
+      spritesheetdoxesquedele_22: 1966006162
+      spritesheetdoxesquedele_29: 610085572
+      spritesheetdoxesquedele_8: 2120982641
+      spritesheetdoxesquedele_54: -507928770
+      spritesheetdoxesquedele_41: -581019355
+      spritesheetdoxesquedele_2: -1379015747
+      spritesheetdoxesquedele_4: 1846168208
+      spritesheetdoxesquedele_67: -645433887
+      spritesheetdoxesquedele_17: -1261384320
+      spritesheetdoxesquedele_62: -531757077
+      spritesheetdoxesquedele_63: 652793901
+      spritesheetdoxesquedele_32: 1332799225
+      spritesheetdoxesquedele_65: 115377617
+      spritesheetdoxesquedele_7: 1077185326
+      spritesheetdoxesquedele_26: -1922919141
+      spritesheetdoxesquedele_46: -1297227914
+      spritesheetdoxesquedele_47: -1349095047
+      spritesheetdoxesquedele_48: 1148866569
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
