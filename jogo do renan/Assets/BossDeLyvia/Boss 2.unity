@@ -315,7 +315,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604661905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.12, y: -1.47, z: 0}
+  m_LocalPosition: {x: -9.42, y: -3.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 1186827051}
   - component: {fileID: 1186827050}
   - component: {fileID: 1186827056}
+  - component: {fileID: 1186827057}
   m_Layer: 0
   m_Name: BossII
   m_TagString: Untagged
@@ -455,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
 --- !u!114 &1186827053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,3 +526,18 @@ MonoBehaviour:
   firePoint: {fileID: 358447474}
   fireRate: 2
   attackRange: 10
+--- !u!114 &1186827057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186827047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f716f9e927c2b3a4f9fa96f39136f334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clonePrefab: {fileID: 5804665851654433443, guid: 914f851a34227ae4e8180623b0b07447, type: 3}
+  cloneCreationRate: 1
+  numberOfClones: 5

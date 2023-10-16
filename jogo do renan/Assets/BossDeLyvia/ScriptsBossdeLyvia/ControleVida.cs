@@ -6,7 +6,7 @@ public class ControleVida : MonoBehaviour
 {
   
     public float maxHealth = 100f; // Saúde máxima do chefe
-    private float currentHealth;
+    public float currentHealth;
 
     void Start()
     {
