@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossCloneSpawner : MonoBehaviour
 {
     public GameObject clonePrefab;  // Prefab do clone
-    public float cloneCreationRate = 10.0f; // Taxa de criação de clones
+    public float cloneCreationRate = 1.0f; // Taxa de criação de clones
     public int numberOfClones = 2; // Número de clones a serem criados
 
     private float nextCloneCreationTime;
@@ -37,14 +37,14 @@ public class BossCloneSpawner : MonoBehaviour
     }
     
     void CreateClones()
+{
+    for (int i = 0; i < numberOfClones; i++)
     {
-        for (int i = 0; i < numberOfClones; i++)
-        {
-            // Calcule a posição de criação dos clones com base na posição do chefe
-            Vector3 spawnPosition = transform.position + Random.insideUnitSphere * 2.0f;
+        // Calcule a posição de criação dos clones com base na posição do chefe
+        Vector3 spawnPosition = transform.position + Random.insideUnitSphere * 2.0f;
 
-            // Instancie o clone e adicione-o ao objeto que contém os clones
-            GameObject clone = Instantiate(clonePrefab, spawnPosition, Quaternion.identity);
-        }
+        // Instancie o clone e adicione-o ao objeto que contém os clones
+        GameObject clone = Instantiate(clonePrefab, spawnPosition, Quaternion.identity);
     }
+}
 }
