@@ -7,12 +7,25 @@ public class ControleVida : MonoBehaviour
   
     public float maxHealth = 100f; // Saúde máxima do chefe
     public float currentHealth;
+    public GameObject Clone;
+    public GameObject CloneI;
 
     void Start()
     {
         currentHealth = maxHealth;
     }
 
+    
+    void Update()
+    {
+
+        if(currentHealth <= 50)
+        {
+            Clone.SetActive(true);
+            CloneI.SetActive(true);
+        }
+    }
+    
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
