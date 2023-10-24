@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControleVida : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class ControleVida : MonoBehaviour
     public float currentHealth;
     public GameObject Clone;
     public GameObject CloneI;
+    public Image BarraDeVida;
 
     void Start()
     {
@@ -24,6 +27,8 @@ public class ControleVida : MonoBehaviour
             Clone.SetActive(true);
             CloneI.SetActive(true);
         }
+        
+        BarraDeVida.fillAmount = currentHealth / maxHealth;
     }
     
     public void TakeDamage(float damage)
@@ -33,6 +38,9 @@ public class ControleVida : MonoBehaviour
         {
             Die();
         }
+
+        // barra de vida
+        BarraDeVida.fillAmount = currentHealth / maxHealth;
     }
 
     void Die()
@@ -43,6 +51,16 @@ public class ControleVida : MonoBehaviour
     public float GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    
+    // diminuir vida do boss
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("HitDoPlayer"))
+        {
+            TakeDamage(10);
+        }
     }
 }
 

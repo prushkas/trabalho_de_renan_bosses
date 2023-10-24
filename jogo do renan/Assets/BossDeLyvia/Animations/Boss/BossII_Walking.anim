@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Boss_Walk
+  m_Name: BossII_Walking
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,21 +21,21 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 1572020081, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
-    - time: 0.1
+    - time: 0.05
       value: {fileID: -403934470, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
-    - time: 0.2
+    - time: 0.1
       value: {fileID: -1028646325, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
-    - time: 0.3
+    - time: 0.15
       value: {fileID: -107854791, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
-    - time: 0.4
+    - time: 0.2
       value: {fileID: -1255403132, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
-    - time: 0.5
+    - time: 0.25
       value: {fileID: 1299871186, guid: 1f41a27925fb42944b0c7ba464cce5e2, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 10
+  m_SampleRate: 20
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 0.3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
