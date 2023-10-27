@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private bool isJump;
     private bool doubleJump;
     public float timeToExitAttack;
+    public float timeToExitAttackEspada;
     private bool isFire;
     private bool isAttacking;
 
@@ -122,7 +123,7 @@ public class Player : MonoBehaviour
                 isAttacking = true;
                 anim.SetBool("isattacking", true);
                 Instantiate(sword, swordPoint.position, swordPoint.rotation);
-                Invoke(nameof(exitAttack), timeToExitAttack);
+                Invoke(nameof(exitAttackEspada), timeToExitAttackEspada);
 
 
                 if (movement > 0)
@@ -134,9 +135,7 @@ public class Player : MonoBehaviour
                 {
                     sword.transform.eulerAngles = new Vector3(0, 180, 0);
                 }
-
-                isAttacking = false;
-                anim.SetBool("isattacking", false);
+                
             }
         }
     }
@@ -146,6 +145,12 @@ public class Player : MonoBehaviour
     {
         isFire = false;
         anim.SetBool("isfiring", false);
+    }
+    
+    void exitAttackEspada()
+    {
+        isAttacking = false;
+        anim.SetBool("isattacking", false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

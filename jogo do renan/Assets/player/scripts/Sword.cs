@@ -6,6 +6,6 @@ public class Sword : MonoBehaviour
 {
     void Update()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 0.5f);
     }
 }
