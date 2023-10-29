@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
-    private bool isJump;
+    public bool isJump;
     private bool doubleJump;
     public float timeToExitAttack;
     public float timeToExitAttackEspada;
@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
 
     private Rigidbody2D rig;
-    private Animator anim;
+    public Animator anim;
 
     private float movement;
     
@@ -163,15 +163,6 @@ public class Player : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("isattacking", false);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 6)
-        {
-            anim.SetBool("isjump", false);
-            isJump = false;
-        }
     }
 
     private IEnumerator Dash()

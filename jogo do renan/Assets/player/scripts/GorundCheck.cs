@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class GorundCheck : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Player guerreiro;
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.layer == 6)
+        {
+            guerreiro.anim.SetBool("isjump", false);
+            guerreiro.isJump = false;
+        }
     }
 }
