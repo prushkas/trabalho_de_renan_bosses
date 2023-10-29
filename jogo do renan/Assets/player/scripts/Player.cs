@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int health = 3;
     public float speed;
     public float jumpForce;
     public bool isJump;
@@ -12,6 +13,10 @@ public class Player : MonoBehaviour
     public float timeToExitAttackEspada;
     private bool isFire;
     private bool isAttacking;
+
+    public bool podeAtirar = false;
+    public bool podePuloDuplo = false;
+    public bool podeDash = false;
 
     private bool canDash = true;
     private bool isDashing;
@@ -35,18 +40,26 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        GameController.invocar.UpdateLives(health);
     }
 
     void Update()
     {
         Move();
         Jump();
-        SoulFire();
+        if (podeAtirar == true)
+        {
+            SoulFire();
+        }
         Espadada();
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash == true)
+        if(podeDash == true)
         {
-            StartCoroutine(Dash());
+            if(Input.GetKeyDown(KeyCode.LeftShift) && canDash == true)
+            {
+                StartCoroutine(Dash());
+            }
         }
     }
     
@@ -86,10 +99,13 @@ public class Player : MonoBehaviour
             }
             else
             {
-                if(doubleJump)
+                if(podePuloDuplo == true)
                 {
-                    rig.AddForce(new Vector2(0, jumpForce * 2), ForceMode2D.Impulse);
-                    doubleJump = false;
+                    if (doubleJump)
+                    {
+                        rig.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+                        doubleJump = false;
+                    }
                 }
             }
         }
@@ -179,5 +195,41 @@ public class Player : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    public void Damage(int dmg)
+    {
+        health -= dmg;
+        GameController.invocar.UpdateLives(health);
+
+        if(health <= 0)
+        {
+            StartCoroutine(Morte());
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "acertaroboss")
+        {
+            anim.SetBool("ishit", true);
+            Damage(1);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "acertaroboss")
+        {
+            anim.SetBool("ishit", false);           
+        }
+    }
+
+    private IEnumerator Morte()
+    {
+        speed = 0;
+        anim.SetBool("isdead", true);
+        yield return new WaitForSeconds(1f);
+        GameController.invocar.RestartGame();
     }
 }

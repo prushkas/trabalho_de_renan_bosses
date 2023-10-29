@@ -232,11 +232,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad70494198640e840bc0e04fc85a16e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10
   speed: 10
-  jumpForce: 10
+  jumpForce: 15
   isJump: 0
   timeToExitAttack: 1
-  timeToExitAttackEspada: 0
+  timeToExitAttackEspada: 0.38
   fireBall: {fileID: 3160486045898353590, guid: aa48fb310b12cf749bb2bc5bea5fc3e1, type: 3}
   sword: {fileID: 7333127528523008826, guid: 0163da9d2dc9d9247a95a613c9fc961f, type: 3}
   firePoint: {fileID: 265716919}

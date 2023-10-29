@@ -21,6 +21,7 @@ public class Boss1 : MonoBehaviour
    // Start is called before the first frame update
    void Awake()
    {
+       health = maxhealh;
        anim = GetComponent<Animator>();
        sprite = GetComponent<SpriteRenderer>();
        player = GameObject.FindGameObjectWithTag("Player").transform;
