@@ -28,4 +28,12 @@ public class BolaDeAlmaDeFogo : MonoBehaviour
             rig.velocity = Vector2.left * speed;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("acertaroboss"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
