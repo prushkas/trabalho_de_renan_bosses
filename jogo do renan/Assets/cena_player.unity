@@ -1129,11 +1129,23 @@ PrefabInstance:
       objectReference: {fileID: 1694485622}
     - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: health
-      value: 3
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
+      propertyPath: podeDash
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: jumpForce
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
+      propertyPath: podeAtirar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
+      propertyPath: podePuloDuplo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 606386031, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: timeToExitAttackEspada
@@ -1149,11 +1161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9042597012970495485, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.94
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 9042597012970495485, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 9042597012970495485, guid: bafc0d2801150be499517b13bcaa2926, type: 3}
       propertyPath: m_LocalPosition.z
