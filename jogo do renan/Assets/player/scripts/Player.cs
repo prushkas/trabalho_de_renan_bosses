@@ -13,11 +13,18 @@ public class Player : MonoBehaviour
     private bool isFire;
     private bool isAttacking;
 
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 24f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+
     public GameObject fireBall;
     public GameObject sword;
     public Transform firePoint;
     public Transform swordPoint;
 
+    [SerializeField] private TrailRenderer tr;
 
     private Rigidbody2D rig;
     private Animator anim;
@@ -36,6 +43,11 @@ public class Player : MonoBehaviour
         Jump();
         SoulFire();
         Espadada();
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash == true)
+        {
+            StartCoroutine(Dash());
+        }
     }
     
     void Move()
@@ -160,5 +172,21 @@ public class Player : MonoBehaviour
             anim.SetBool("isjump", false);
             isJump = false;
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rig.gravityScale;
+        rig.gravityScale = 0f;
+        rig.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rig.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
