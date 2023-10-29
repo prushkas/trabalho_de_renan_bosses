@@ -28,6 +28,13 @@ public class Player : MonoBehaviour
     public GameObject sword;
     public Transform firePoint;
     public Transform swordPoint;
+    public AudioSource source;
+    public AudioClip clip1;
+    public AudioClip clip2;
+    public AudioClip clip3;
+    public AudioClip clip4;
+    public AudioClip clip5;
+    public AudioClip clip6;
 
     [SerializeField] private TrailRenderer tr;
 
@@ -96,19 +103,28 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                 doubleJump = true;
                 isJump = true;
+                Soundjump();
             }
             else
             {
                 if(podePuloDuplo == true)
                 {
                     if (doubleJump)
-                    {
+                    {                       
                         rig.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                         doubleJump = false;
+                        Soundjump();
                     }
                 }
             }
         }
+    }
+
+    void Soundjump()
+    {
+        source.volume = 0.3f;
+        source.pitch = 1;
+        source.PlayOneShot(clip1);
     }
 
     void SoulFire()
@@ -125,6 +141,7 @@ public class Player : MonoBehaviour
                 isFire = true;
                 anim.SetBool("isfiring", true);
                 GameObject bolaFogo = Instantiate(fireBall, firePoint.position, firePoint.rotation);
+                Soundtiro();
                 Invoke(nameof(exitAttack), timeToExitAttack);
 
                 if (transform.rotation.y == 0)
@@ -142,6 +159,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Soundtiro()
+    {
+        source.volume = 0.2f;
+        source.pitch = 1;
+        source.PlayOneShot(clip2);
+    }
+
     void Espadada()
     {
         if (Input.GetKeyDown(KeyCode.Z))
@@ -151,8 +175,8 @@ public class Player : MonoBehaviour
                 isAttacking = true;
                 anim.SetBool("isattacking", true);
                 Instantiate(sword, swordPoint.position, swordPoint.rotation);
-                Invoke(nameof(exitAttackEspada), timeToExitAttackEspada);
-
+                SoundEspada();
+                Invoke(nameof(exitAttackEspada), timeToExitAttackEspada);              
 
                 if (movement > 0)
                 {
@@ -168,6 +192,12 @@ public class Player : MonoBehaviour
         }
     }
 
+    void SoundEspada()
+    {
+        source.volume = 0.4f;
+        source.pitch = 1;
+        source.PlayOneShot(clip3);
+    }
 
     void exitAttack()
     {
@@ -183,6 +213,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        Sounddash();
         canDash = false;
         isDashing = true;
         float originalGravity = rig.gravityScale;
@@ -197,15 +228,30 @@ public class Player : MonoBehaviour
         canDash = true;
     }
 
-    public void Damage(int dmg)
+    void Sounddash()
     {
+        source.volume = 1.5f;
+        source.pitch = 1;
+        source.PlayOneShot(clip4);
+    }
+
+    public void Damage(int dmg)
+    {        
         health -= dmg;
         GameController.invocar.UpdateLives(health);
+        Sounddamage();
 
-        if(health <= 0)
+        if (health <= 0)
         {
             StartCoroutine(Morte());
         }
+    }
+
+    void Sounddamage()
+    {
+        source.volume = 1f;
+        source.pitch = 1;
+        source.PlayOneShot(clip5);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -229,7 +275,15 @@ public class Player : MonoBehaviour
     {
         speed = 0;
         anim.SetBool("isdead", true);
-        yield return new WaitForSeconds(1f);
+        Sounddeath();
+        yield return new WaitForSeconds(0.6f);
         GameController.invocar.RestartGame();
+    }
+
+    void Sounddeath()
+    {
+        source.volume = 0.5f;
+        source.pitch = 1;
+        source.PlayOneShot(clip6);
     }
 }
