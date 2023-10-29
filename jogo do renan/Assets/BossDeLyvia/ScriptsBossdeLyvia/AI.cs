@@ -10,10 +10,12 @@ public class AI : MonoBehaviour
     public float moveSpeed = 3.0f; // Velocidade de movimento do chefe
     private Transform player; // Referência ao jogador
     private bool isChasingPlayer = false; // Indica se o chefe está perseguindo o jogador
+    private Animator anim;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform; // Encontre o jogador
+        anim = GetComponent<Animator>();
     }
 
     void Update()
