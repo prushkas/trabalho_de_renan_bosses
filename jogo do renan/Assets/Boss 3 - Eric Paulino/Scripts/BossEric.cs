@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,25 +6,36 @@ using UnityEngine;
 public class BossEric : MonoBehaviour
 {
     public float Speed;
-    public Rigidbody2D rig;
-    public Animator anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rig = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+    public float Distance;
+    private Animator Anim;
 
+    bool isRight = true;
+    
+    public Transform groundCheck;
+
+    private void Start()
+    {
+        Anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector2.right * Speed * Time.deltaTime);
+        RaycastHit2D Ground = Physics2D.Raycast(groundCheck.position, Vector2.down, Distance);
+
+        if (Ground.collider == false)
+        {
+            if (isRight == true)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                isRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+                isRight = true;
+            }
+        }
     }
     
-    private void FixedUpdate()
-    {
-    
-    
-    }
 }
