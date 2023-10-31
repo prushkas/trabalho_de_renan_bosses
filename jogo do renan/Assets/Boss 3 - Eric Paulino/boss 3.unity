@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138914121e5d7f4449f4505450b03d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 10
   Distance: 1
   groundCheck: {fileID: 1786498583}
 --- !u!1 &1786498582
