@@ -7,7 +7,12 @@ public class BossEric : MonoBehaviour
 {
     public float Speed;
     public float Distance;
+    public float DistanciaAtaque;
+    public bool Atacando;
+    
     private Animator Anim;
+    private float DistanciadoJogador;
+    private Transform Jogador;
 
     bool isRight = true;
     
@@ -15,27 +20,44 @@ public class BossEric : MonoBehaviour
 
     private void Start()
     {
+        Jogador = GameObject.FindWithTag("Player").transform;
         Anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        transform.Translate(Vector2.right * Speed * Time.deltaTime);
+        if (!Atacando)
+        {
+            transform.Translate(Vector2.right * Speed * Time.deltaTime);
+            Anim.SetInteger("Transition",1); 
+        }
+        else
+        {
+            Anim.SetInteger("Transition",2); 
+        }
+        
+
         RaycastHit2D Ground = Physics2D.Raycast(groundCheck.position, Vector2.down, Distance);
 
-        if (Ground.collider == false)
-        {
-            if (isRight == true)
+            DistanciadoJogador = Vector2.Distance(transform.position, Jogador.position);
+
+            if (DistanciadoJogador <= DistanciaAtaque)
             {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                isRight = false;
+                Atacando = true;
             }
-            else
+
+            if (Ground.collider == false)
             {
-                transform.eulerAngles = new Vector3(0, 180, 0);
-                isRight = true;
+                if (isRight == true)
+                {
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                    isRight = false;
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(0, 180, 0);
+                    isRight = true;
+                }
             }
-        }
     }
-    
 }
