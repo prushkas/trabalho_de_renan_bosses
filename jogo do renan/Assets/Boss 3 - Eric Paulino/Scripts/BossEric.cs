@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BossEric : MonoBehaviour
 {
+    
+    public int Health;
     public float Speed;
     public float Distance;
     public float DistanciaAtaque;
@@ -29,22 +31,19 @@ public class BossEric : MonoBehaviour
         if (!Atacando)
         {
             transform.Translate(Vector2.right * Speed * Time.deltaTime);
-            Anim.SetInteger("Transition",1); 
+            Anim.SetInteger("transition",1); 
         }
         else
         {
-            Anim.SetInteger("Transition",2); 
+            Anim.SetInteger("transition",2); 
         }
         
 
         RaycastHit2D Ground = Physics2D.Raycast(groundCheck.position, Vector2.down, Distance);
 
             DistanciadoJogador = Vector2.Distance(transform.position, Jogador.position);
-
-            if (DistanciadoJogador <= DistanciaAtaque)
-            {
-                Atacando = true;
-            }
+            //a parte do ataque do boss
+            Atacando = DistanciadoJogador <= DistanciaAtaque;
 
             if (Ground.collider == false)
             {
@@ -59,5 +58,14 @@ public class BossEric : MonoBehaviour
                     isRight = true;
                 }
             }
+    }
+
+    public void Damage(int DMG)
+    {
+        Health -= DMG;
+        if (Health == 0)
+        {
+            //boss derrotado
+        }
     }
 }
