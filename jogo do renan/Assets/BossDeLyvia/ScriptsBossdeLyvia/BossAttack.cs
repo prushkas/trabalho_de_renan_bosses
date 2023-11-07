@@ -12,9 +12,13 @@ public class BossAttack : MonoBehaviour
     private float nextFireTime;
     private Transform player; // Referência ao jogador
 
+    private AudioSource audio;
+    public AudioClip clip1;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform; // Encontre o jogador
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -23,22 +27,25 @@ public class BossAttack : MonoBehaviour
     {
         if (IsPlayerInAttackRange())
         {
-            // Determine a posição relativa do jogador em relação ao chefe
+            // Determina a posição relativa do jogador em relação ao chefe
             Vector3 direction = player.position - transform.position;
 
-            // Verifique se o jogador está à esquerda ou à direita do chefe
+            // Verifica se o jogador está à esquerda ou à direita do chefe
             if (direction.x < 0)
             {
-                // Vire o chefe para a direita
+                // Vira o chefe para a direita
                 transform.localScale = new Vector3(7, 7, 7);
             }
             else
             {
-                // Vire o chefe para a esquerda
+                // Vira o chefe para a esquerda
                 transform.localScale = new Vector3(-7, 7, 7);
             }
 
             FireLaser();
+            
+            audio.PlayOneShot(clip1);
+            
             nextFireTime = Time.time + 1.0f / fireRate;
         }
     }
@@ -46,7 +53,7 @@ public class BossAttack : MonoBehaviour
 
     bool IsPlayerInAttackRange()
     {
-        // Verifique se o jogador está dentro do alcance de ataque
+        // Verifica se o jogador está dentro do alcance de ataque
         if (player != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
@@ -62,16 +69,16 @@ public class BossAttack : MonoBehaviour
         Vector3 direction = player.position - firePoint.position;
         direction.Normalize();
 
-        // Crie o laser com um Rigidbody2D
+        // Cria o laser com um Rigidbody2D
         GameObject laser = Instantiate(laserPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rb = laser.GetComponent<Rigidbody2D>();
 
-        // Aplique uma força para mover o tiro na direção do jogador
+        // Aplica uma força para mover o tiro na direção do jogador
         float laserSpeed = 10.0f; // Ajuste a velocidade conforme necessário
         rb.velocity = direction * laserSpeed;
 
-        // Destrua o laser após um certo tempo (se não atingir o jogador)
-        Destroy(laser, 0.5f); // Ajuste conforme necessário
+        // Destroi o laser após um certo tempo (se não atingir o jogador)
+        Destroy(laser, 0.5f);
     }
 }
 
