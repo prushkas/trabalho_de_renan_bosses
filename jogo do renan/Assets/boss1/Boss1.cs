@@ -1,15 +1,19 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss1 : MonoBehaviour
 {
     public estadosboss1 estados;
     public float speed;
+    public estadosboss1 atual;
 
     private int animacao;
     public int maxhealh;
+    public int VidaAtualBoss;
     public int health;
     public int damage;
     
@@ -17,7 +21,12 @@ public class Boss1 : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
     private Transform player;
-  
+    
+    public AudioSource hit;
+
+    public Image BarraDeVida;
+
+    public TextMeshProUGUI contadordevida;
    // Start is called before the first frame update
    void Awake()
    {
@@ -30,6 +39,7 @@ public class Boss1 : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
+       contadordevida.text = $"Vida Boss: {VidaAtualBoss}";
        if (estados == estadosboss1.estado1)
        {
            animacao = 1;
@@ -62,6 +72,8 @@ public class Boss1 : MonoBehaviour
            anim.SetInteger("transition", 4);
            Destroy(gameObject);
        }
+
+       BarraDeVida.fillAmount = VidaAtualBoss / maxhealh;
    }
 
    private void OnCollisionStay2D(Collision2D col)
@@ -78,13 +90,33 @@ public class Boss1 : MonoBehaviour
    IEnumerator ataque()
    {
        atacando = true;
+       hit.Play();
        anim.SetInteger("transition", animacao);
        yield return new WaitForSeconds(1f);
        anim.SetInteger("transition", 0);
        atacando = false;
    }
    
+   public void HitBoss(int danoparareceber)
+   {
+       VidaAtualBoss -= danoparareceber;
+
+       if (VidaAtualBoss <= maxhealh / 2)
+       {
+           atual = estadosboss1.estado2;
+       }
+
+       BarraDeVida.fillAmount = VidaAtualBoss / maxhealh;
+
+       if (VidaAtualBoss <= 0)
+       {
+           Destroy(gameObject);
+       }
+   }
+
+   
 }
+
 
 public enum estadosboss1
 {
