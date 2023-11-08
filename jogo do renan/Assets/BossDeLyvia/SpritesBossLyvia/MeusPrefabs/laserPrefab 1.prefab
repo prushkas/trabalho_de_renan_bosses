@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6400999585050422621}
   - component: {fileID: 2200075089855737714}
   m_Layer: 0
-  m_Name: laserPrefab
+  m_Name: laserPrefab 1
   m_TagString: acertaroboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
