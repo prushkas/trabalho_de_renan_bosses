@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HitDoPlayer
   - acertaroboss
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,9 @@ public class BossEric : MonoBehaviour
     public float Distance;
     public float DistanciaAtaque;
     public bool Atacando;
+    public int Damage = 4;
+    public int SubtrairVida;
+    public bool Fase2 = false; 
     
     private Animator Anim;
     private float DistanciadoJogador;
@@ -60,12 +63,46 @@ public class BossEric : MonoBehaviour
             }
     }
 
-    public void Damage(int DMG)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        Health -= DMG;
-        if (Health == 0)
+        if (col.gameObject.CompareTag("HitDoPLayer"))
         {
-            //boss derrotado
+            col.gameObject.GetComponent<Player>().Damage(Damage);
+            SubtrairVida = Health - 1;
+            Anim.SetInteger("transition", 3);
+
+            if (!Fase2 && Health <= 10)
+            {
+                Fase2 = true;
+                Comportamento2();
+            }
+
+        }
+    }
+
+
+    public void Comportamento2()
+    {
+        Speed *= 2;
+        Damage *= 2;
+        Anim.GetComponent<SpriteRenderer>().color = Color.red;
+        
+    } 
+    
+    
+    
+    
+    void Morreu()
+    {
+       Destroy(gameObject);
+    }
+    public void damage(int Valor)
+    {
+        Health -= Valor;
+        if ( Health <= 0)
+        {
+            Health = 0;
+            Morreu();
         }
     }
 }
