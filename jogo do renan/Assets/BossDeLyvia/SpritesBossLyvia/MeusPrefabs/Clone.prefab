@@ -133,6 +133,7 @@ MonoBehaviour:
   firePoint: {fileID: 2745607966774454223}
   fireRate: 3
   attackRange: 10
+  clip1: {fileID: 0}
 --- !u!114 &8580145653384893980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
