@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 1694485627}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
   clip5: {fileID: 8300000, guid: 9312ca1d8689fcc498a8b8061b3ebfbc, type: 3}
   clip6: {fileID: 8300000, guid: 278be9e629eb6024aa2eb32399b68617, type: 3}
   tr: {fileID: 1694485622}
-  anim: {fileID: 0}
+  anim: {fileID: 9042597012970495475}
 --- !u!96 &1694485622
 TrailRenderer:
   serializedVersion: 2

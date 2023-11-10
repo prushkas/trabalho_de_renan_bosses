@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     public GameObject sword;
     public Transform firePoint;
     public Transform swordPoint;
+    public Boss1 boss1;
     public AudioSource source;
     public AudioClip clip1;
     public AudioClip clip2;
@@ -259,8 +260,8 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == "acertaroboss")
         {
             anim.SetBool("ishit", true);
-            Damage(1);
         }
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)

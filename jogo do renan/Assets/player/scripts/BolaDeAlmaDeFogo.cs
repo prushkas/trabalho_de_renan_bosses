@@ -5,6 +5,7 @@ using UnityEngine;
 public class BolaDeAlmaDeFogo : MonoBehaviour
 {
     private Rigidbody2D rig;
+    public Boss1 boss;
     public float speed;
 
     public bool isRight;
@@ -34,6 +35,10 @@ public class BolaDeAlmaDeFogo : MonoBehaviour
         if (col.gameObject.CompareTag("acertaroboss"))
         {
             Destroy(gameObject);
+        }
+        if (col.gameObject.CompareTag("acertaroboss"))
+        {
+            boss.Damage(1);
         }
     }
 }

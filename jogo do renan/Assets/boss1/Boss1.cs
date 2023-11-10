@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Boss1 : MonoBehaviour
@@ -21,7 +22,7 @@ public class Boss1 : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sprite;
     private Transform player;
-    
+    public Player playerScript;
     public AudioSource hit;
 
     public Image BarraDeVida;
@@ -39,7 +40,11 @@ public class Boss1 : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
-       contadordevida.text = $"Vida Boss: {VidaAtualBoss}";
+       if (health <= 0)
+       {
+           contadordevida.text = "morreu";
+       }
+       contadordevida.text = "Vida Boss: " + health;
        if (estados == estadosboss1.estado1)
        {
            animacao = 1;
@@ -71,9 +76,29 @@ public class Boss1 : MonoBehaviour
        {
            anim.SetInteger("transition", 4);
            Destroy(gameObject);
+           SceneManager.LoadScene(2);
+
        }
 
-       BarraDeVida.fillAmount = VidaAtualBoss / maxhealh;
+       BarraDeVida.fillAmount = health / maxhealh;
+   }
+
+   
+
+   private void OnTriggerEnter2D(Collider2D col)
+   {
+       if (col.transform.CompareTag("HitDoPlayer"))
+       {
+           Damage(1);
+       }
+   }
+
+   private void OnCollisionEnter2D(Collision2D collision)
+   {
+       if (collision.gameObject.CompareTag("Player"))
+       {
+           playerScript.Damage(1);
+       }
    }
 
    private void OnCollisionStay2D(Collision2D col)
@@ -99,16 +124,16 @@ public class Boss1 : MonoBehaviour
    
    public void HitBoss(int danoparareceber)
    {
-       VidaAtualBoss -= danoparareceber;
+       health -= danoparareceber;
 
-       if (VidaAtualBoss <= maxhealh / 2)
+       if (health <= maxhealh / 2)
        {
            atual = estadosboss1.estado2;
        }
 
        BarraDeVida.fillAmount = VidaAtualBoss / maxhealh;
 
-       if (VidaAtualBoss <= 0)
+       if (health <= 0)
        {
            Destroy(gameObject);
        }
